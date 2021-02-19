@@ -27,7 +27,10 @@ qplot(total_steps_days$sum,geom = 'histogram')
 ```{r}
 
 mean(total_steps_days$sum,na.rm = T)
+
+
 ```
+
 ### median
 ```{r}
 median(total_steps_days$sum)
@@ -46,6 +49,7 @@ avg_steps_interval[which(avg_steps_interval$avg_steps== max(avg_steps_interval$a
 ```
 
 ## Imputing missing values
+i will replace the na values with the mean for it's  interval 
 ```{r}
 nomis <- sum(is.na(data$steps))
 sprintf('number of missing values %s',nomis)

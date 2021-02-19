@@ -66,6 +66,7 @@ mean(total_steps_days$sum,na.rm = T)
 ```
 ## [1] 9354.23
 ```
+
 ### median
 
 ```r
@@ -103,6 +104,7 @@ avg_steps_interval[which(avg_steps_interval$avg_steps== max(avg_steps_interval$a
 ```
 
 ## Imputing missing values
+i will replace the na values with the mean for it's  interval 
 
 ```r
 nomis <- sum(is.na(data$steps))

@@ -424,6 +424,7 @@ total_steps_days &lt;-data %&gt;% group_by(date) %&gt;% summarise(sum = sum(step
 </div>
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
+<p>i will replace the na values with the mean for it’s interval</p>
 <pre class="r"><code>nomis &lt;- sum(is.na(data$steps))
 sprintf(&#39;number of missing values %s&#39;,nomis)</code></pre>
 <pre><code>## [1] &quot;number of missing values 2304&quot;</code></pre>
